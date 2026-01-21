@@ -8,8 +8,6 @@ local MINIMUM_VELOCITY = 3 --6
 local MAX_BOUNCES = 5 --7
 local DEFAULT_VELOCITY_SCALE = 0.5 
 
-local cast = ReplicatedStorage.Cast 
-
 local Projectile = {} 
 Projectile.RunningProjectile = {} 
 
