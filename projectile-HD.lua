@@ -94,9 +94,7 @@ end
 -- private functions
 
 function Projectile:__ConfigureProjectile(projectileId : string , cast , explode)
-	-- this function will register a projectile into the RunningProjectile table and attach the projectile with
-	-- this will make it easier to keep track and  manage our projectiles( for replication , clean up and vfx on other clients )
-	
+	-- configure new projectile's cast and explode function
 	-- cast and explode function 
 	Projectile.RunningProjectile[projectileId] = { 
 		Cast = cast ; -- this function will run when the projectile hits something
@@ -123,6 +121,8 @@ end
 
 
 function Projectile.RegisterProjectile(self : ProjectileClass)
+	-- this function will register a projectile into the RunningProjectile table and attach the projectile with
+	-- this will make it easier to keep track and  manage our projectiles( for replication , clean up and vfx on other clients )
 
 	--raycast check
 	local rayResult : RaycastResult = nil
