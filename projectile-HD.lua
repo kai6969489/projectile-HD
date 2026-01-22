@@ -1,4 +1,4 @@
--- strict!
+
 local RunService = game:GetService("RunService") --2
 local HTTPService = game:GetService("HttpService") --3 
 local ReplicatedStorage = game:GetService("ReplicatedStorage") --4
