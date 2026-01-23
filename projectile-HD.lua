@@ -16,7 +16,7 @@ Projectile.__index = Projectile -- we use .__index so that lua will find missing
 
 -- declaring the projectile instance type
 -- this makes sure that, the new mortar instances we create follows the behavior
--- and structure of that is defined by the Mortar metatable
+-- and structure of that is defined by the projectile metatable
 -- this is important becs it enforces strict type checking on the instances created
 -- and also it allows for autocomplete and can warn us if the instance type does not
 -- match the type declaration
